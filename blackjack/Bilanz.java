@@ -1,10 +1,10 @@
-package SiebzehnUndVier;
+package blackjack;
 
 public class Bilanz {
 	GetWinner getWinner = new GetWinner();
-	
+
 	public static String[][] table = new String[][] { { "Bilanz der Spieler", "Spiele", "Siege", "Niederlagen" },
-		{ "Computer", "", "", "" }, { "Mensch", "", "", "" } };
+			{ "Computer", "", "", "" }, { "Mensch", "", "", "" } };
 
 	static String spielanzahl = String.valueOf(GetWinner.spielanzahl);
 	static String anzahlComputerSiege = String.valueOf(GetWinner.anzahlMenschNiederlagen);
@@ -19,10 +19,10 @@ public class Bilanz {
 		table[2][1] = spielanzahl;
 		table[2][2] = anzahlMenschSiege;
 		table[2][3] = anzahlMenschNiederlagen;
-		
+
 		getBilanzTable();
 	}
-	
+
 	public static void getBilanzTable() {
 		int[] maxColumnLengths = new int[table[0].length];
 		for (int col = 0; col < table[0].length; col++) {

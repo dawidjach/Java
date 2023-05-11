@@ -1,9 +1,9 @@
-package SiebzehnUndVier;
+package blackjack;
 
 public class Computer {
-	
+
 	public static int computerSpielProlog() {
-		
+
 		System.out.print("\nComputerspieler hat " + Spiel.anzahlKartenComputer + " Karten: ");
 		for (int i = 1; i <= Spiel.anzahlKartenComputer; i++) {
 			int karten = (int) (Math.random() * 10) + 2;
@@ -13,7 +13,7 @@ public class Computer {
 		return Spiel.computerPunkte;
 	}
 
-	public static int computerSpiel() {	
+	public static int computerSpiel() {
 		if (Spiel.computerPunkte < 17) {
 			int karten = (int) (Math.random() * 10) + 2;
 			System.out.print("\nComputerspieler möchte eine neue Karte: +" + karten);

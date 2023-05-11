@@ -1,4 +1,4 @@
-package SiebzehnUndVier;
+package blackjack;
 
 public class GetWinner {
 	static boolean winner = false;

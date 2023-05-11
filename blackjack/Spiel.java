@@ -1,4 +1,4 @@
-package SiebzehnUndVier;
+package blackjack;
 
 import java.util.Scanner;
 
@@ -15,7 +15,6 @@ public class Spiel {
 	static String playerName;
 	static boolean kampflosGewinnen = false;
 	boolean rueckkampf = false;
-	
 
 	public static void prolog() {
 		Mensch.menschSpielProlog();
@@ -33,24 +32,24 @@ public class Spiel {
 			GetWinner.punktenanzahl();
 			GetWinner.kartenanzahl();
 			if (computerPunkte < 21 || menschPunkte < 21) {
-				playerName = werSpielt ? mensch : computerspieler;				
+				playerName = werSpielt ? mensch : computerspieler;
 				if (werSpielt) {
 					Mensch.menschSpiel();
 				} else {
 					Computer.computerSpiel();
-				}		
-				GetWinner.whoWin();				
+				}
+				GetWinner.whoWin();
 				werSpielt = !werSpielt;
 			}
 		} while (prologGespielt == true);
 	}
-	
+
 	public static void nochEinmalSpielen() {
 		if (GetWinner.winner != false) {
 			Scanner scanner = new Scanner(System.in);
 			System.out.print("\nMöchtest du noch einmal spielen?(j/n): ");
 			String output = scanner.next();
-			if(output.equals("j")) {
+			if (output.equals("j")) {
 				String wiederholen = "*".repeat(20);
 				System.out.println(wiederholen);
 				anzahlKartenComputer = 2;
