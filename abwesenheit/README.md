@@ -1,3 +1,5 @@
+<p align="center"><a href="https://github.com/dawidjach/" target="_blank"><img src="startdialogfenster.png" width="400" alt="dawidjach"></a></p>
+
 ## Automatische Konfiguration der Sieve-Anwendung zur Steuerung der OutOfOfficeMails
 
 Das Ziel des Projekts ist die automatische Beantwortung von E-Mails bei Abwesenheit eines Mitarbeiters. Zur Erreichung dieses Ziels sind sowohl der Client "Abwesenheit" als auch das Programm "Sieve-Datei-Updater" erforderlich. Der Client "Abwesenheit" ist eine Desktop-Anwendung (Swing), die es dem Mitarbeiter ermöglicht, seine Abwesenheit (aufgrund von Urlaub oder Krankheit) sowie den Zeitraum der Abwesenheit zu erfassen und diese Informationen in der Datenbank zu speichern. Um das Projekt zu vereinfachen, sollte der Client ohne Anmeldeverwaltung entwickelt werden. Daher wird er nur auf dem PC der Personalabteilung installiert.
