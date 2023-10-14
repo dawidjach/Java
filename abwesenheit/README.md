@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/dawidjach/" target="_blank"><img src="startdialog.png" width="400" alt="dawidjach"></a></p>
+<p align="center"><a href="https://github.com/dawidjach/java/blob/master/abwesenheit/startdialog.png" target="_blank"><img src="startdialog.png" width="400" alt="dawidjach"></a></p>
 
 ## Automatische Konfiguration der Sieve-Anwendung zur Steuerung der OutOfOfficeMails
 
