@@ -4,4 +4,4 @@ Das Ziel des Projekts ist die automatische Beantwortung von E-Mails bei Abwesenh
 
 Das Programm "Sieve-Datei-Updater" soll auf dem Mailserver eingesetzt werden und in der Datenbank nach Datensätzen suchen, bei denen das heutige Datum innerhalb des Abwesenheitszeitraums liegt. Anschließend werden die Datensätze aus der Datenbank ausgelesen, und eine Sieve-Datei mit dem Abwesenheitstext bzw. Sieve-Skript wird erstellt. Die Ausführung des Programms wird zeitgesteuert durchgeführt, sodass der "Sieve-Datei-Updater" automatisch zu bestimmten Uhrzeiten ausgeführt wird (Cron-Datei). Diese Sieve-Skripte werden in den Mailservernutzernamen-Ordner (home/mailservenutzername) als Sieve-Dateien (dovecot.sieve) gespeichert.
 
-![startdialogfenster](startdialogfenster/logo.png)
+![startdialogfenster](startdialogfenster/startdialogfenster.png)
