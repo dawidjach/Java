@@ -1,0 +1,5 @@
+#für Root
+Database URL: jdbc:mariadb://localhost/abwesenheit
+Root-Username: root
+Root-Password:
+

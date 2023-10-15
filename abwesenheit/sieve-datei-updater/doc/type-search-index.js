@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"abw.updater","l":"Main"},{"p":"abw.updater","l":"PropertiesDateiEinlesen"},{"p":"abw.updater","l":"Sieve"},{"p":"abw.updater","l":"Updater"},{"p":"abw.updater","l":"UpdaterDBManagement"}];updateSearchResults();
