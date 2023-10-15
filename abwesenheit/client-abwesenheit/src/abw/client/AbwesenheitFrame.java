@@ -48,7 +48,7 @@ public class AbwesenheitFrame extends JFrame {
 	public AbwesenheitFrame() throws IOException {
 		am = AbwesenheitDBManagement.getInstance();
 
-		setTitle("Abwesenheit - HSi GmbH");
+		setTitle("Abwesenheit - github.com/dawidjach/");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(800, 600);
 		add(mainPanel());
