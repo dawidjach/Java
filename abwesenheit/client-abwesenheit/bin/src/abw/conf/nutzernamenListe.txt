@@ -1,4 +1,0 @@
-mmustermann
-jschmidt
-hmoeller
-aweiss

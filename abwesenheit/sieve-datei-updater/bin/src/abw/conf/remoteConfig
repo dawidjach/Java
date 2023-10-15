@@ -1,9 +1,0 @@
-#für Root
-Database URL: jdbc:mariadb://localhost/abwesenheit
-Root-Username: root
-Root-Password: Di1sP4MySQL!
-
-#für Extra-Nutzer
-Database URL: jdbc:mariadb://localhost/abwesenheit
-Extra-Nutzer-Username: aplaner
-Extra-Nutzer-Password: Di1sP4Aplaner!
