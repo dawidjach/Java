@@ -21,4 +21,4 @@ or send your email to support@company.de.
 
 Mit freundlichen Grüßen / Best regards
 <vollname>
-HSi GmbH";
+Company GmbH";
