@@ -1,0 +1,14 @@
+ 
+# Ausführen start_updater.sh von dem Montag bis zum Freitag
+# um der folgenden Uhrzeiten:
+# 00:00.01
+1 0 * * 1-5 /home/jach/sieve-datei-updater/start_updater.sh
+# 10:00.00
+0 10 * * 1-5 /home/jach/sieve-datei-updater/start_updater.sh
+# 14:00.00
+0 14 * * 1-5 /home/jach/sieve-datei-updater/start_updater.sh
+# 17:00.00
+0 17 * * 1-5 /home/jach/sieve-datei-updater/start_updater.sh
+
+# Befehl zum Ausführen:
+# crontab crontab-datei
