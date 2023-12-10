@@ -24,7 +24,7 @@ public class STL {
 	}
 
 	public void readFile() {
-		String filePath = "C:\\Users\\Willkommen\\eclipse-workspace\\java_interface\\Company\\src\\com\\stl.txt";
+		String filePath = "pfad//stl.txt";
 
 		try {
 			FileReader fileReader = new FileReader(filePath);
