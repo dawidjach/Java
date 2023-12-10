@@ -2,7 +2,7 @@ require ["vacation"];
 
 vacation
     :days 1
-    :subject "HSi – Abwesenheitsnotiz / out of office"
+    :subject "Abwesenheitsnotiz / out of office"
     :addresses [andreas.weiss@company.de]
 
 "Vielen Dank für Ihre Nachricht.
@@ -21,4 +21,4 @@ or send your email to support@company.de.
 
 Mit freundlichen Grüßen / Best regards
 Andreas Weiß
-HSi GmbH";
+Company GmbH";
