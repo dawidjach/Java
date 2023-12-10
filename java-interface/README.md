@@ -1,4 +1,4 @@
-Build Path bei EclipseIDE einstellen:
-company -> Build Path -> Projects -> Classpath -> add commoninterface, add company,
-commoninterface ohne Build Path,
-company -> Build Path -> Projects -> Classpath -> add commoninterface.
+## Build Path bei EclipseIDE einstellen:
+<p>company -> Build Path -> Projects -> Classpath -> add commoninterface, add company,</p>
+<p>commoninterface ohne Build Path,</p>
+<p>company -> Build Path -> Projects -> Classpath -> add commoninterface.</p>
