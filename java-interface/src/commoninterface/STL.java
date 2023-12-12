@@ -22,20 +22,18 @@ public class STL {
 	public String toString() {
 		return stl;
 	}
-	
+
 	public static String filePath() {
 		String filePath = "path\\stl.txt";
 		return filePath;
 	}
 
 	public void readFile() {
-<<<<<<< HEAD
-		String filePath = filePath();
-=======
-		String filePath = "pfad//stl.txt";
->>>>>>> 47c6b02b5359daddf71b8f67614597377e7f0908
+		String filePath = "path\\stl.txt";
 
-		try {
+		try
+
+		{
 			FileReader fileReader = new FileReader(filePath);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String line;
