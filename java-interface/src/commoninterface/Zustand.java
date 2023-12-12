@@ -1,21 +1,50 @@
 package commoninterface;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Zustand {
-	String zustand;
+	List<Triangle> dieBiboTriangleListe = new ArrayList<>();
 	
-	public Zustand(String zustand) {
-		this.zustand = zustand;
-	}
-	
-	public String getZustand() {
-		return zustand;
+	public Zustand(List<Triangle> einBiboTriangleListe) {
+		setDieBiboTriangleListe(einBiboTriangleListe);
 	}
 
-	public void setZustand(String zustand) {
-		this.zustand = zustand;
+	
+
+	private List<Triangle> getDieBiboTriangleListe() {
+		return dieBiboTriangleListe;
+	}
+	
+	// um @SuppressWarnings("unused") zu vermeiden
+	public List<Triangle> retrieveDieBiboTriangleListe() {
+		return getDieBiboTriangleListe();
 	}
 
+	private void setDieBiboTriangleListe(List<Triangle> dieBiboTriangleListe) {
+		this.dieBiboTriangleListe = dieBiboTriangleListe;
+	}
+	
+	
+	
+	
+	public void addBiboTriangle(Triangle einBiboTriangle) {
+		dieBiboTriangleListe.add(einBiboTriangle);
+	}
+	
+	public int getBiboTriangleAnzahl() {
+		return dieBiboTriangleListe.size();
+	}
+	
+	public Triangle getBiboTriangle(int einIndex) {
+		if (einIndex >= 0 && einIndex < dieBiboTriangleListe.size()) {
+	        return dieBiboTriangleListe.get(einIndex);
+		} else {
+			return null;
+		}
+	}
+	
 	public String toString() {
-		return zustand;
+		return String.format("DieBiboTriangleListe %s", dieBiboTriangleListe);
 	}
 }

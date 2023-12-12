@@ -8,23 +8,28 @@ public class STL {
 	String stl;
 
 	public STL(String stl) {
-		this.stl = stl;
+		setSTL(stl);
 	}
 
 	public String getSTL() {
 		return stl;
 	}
 
-	public void setSTL(String stl) {
+	private void setSTL(String stl) {
 		this.stl = stl;
 	}
 
 	public String toString() {
 		return stl;
 	}
+	
+	public static String filePath() {
+		String filePath = "path\\stl.txt";
+		return filePath;
+	}
 
 	public void readFile() {
-		String filePath = "C:\\Users\\Willkommen\\eclipse-workspace\\java_interface\\Company\\src\\com\\stl.txt";
+		String filePath = filePath();
 
 		try {
 			FileReader fileReader = new FileReader(filePath);

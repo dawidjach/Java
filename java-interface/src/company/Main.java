@@ -2,34 +2,31 @@ package company;
 
 import java.util.ArrayList;
 import java.util.List;
+import client.*;
+import commoninterface.*;
 
 public class Main {
 	
 	public static void main(String[] args) {
-		int errorCodes1 = 2;
-		int errorCodes2 = 12;
-		String testZustand = "Testzustand";
-		String testZZD = "TestZZD-Ziel Zustand Drehen";
-		String testEG = "TestEG";
-		String testSTL = "TestSTL";
-		String testFEBO = "TestFEBO";
-		String testLageTKS = "Test LageTKS";
-		List<Double> maxAbmessungen = new ArrayList<>();
-		maxAbmessungen.add(50.0);
-		maxAbmessungen.add(150.0);
-		maxAbmessungen.add(250.0);
-		
-		STL stl = new STL(testSTL);
-		FEBO febo = new FEBO(testFEBO);
-		Zustand zustand = new Zustand(testZustand);
-		LageTKS lagetks = new LageTKS(testZZD);
-		ZielZustandDrehen zzd = new ZielZustandDrehen(errorCodes1, testZustand, testLageTKS, maxAbmessungen);
-		EG eg = new EG(errorCodes2, testEG);
-		
-		InterfaceMitMethoden imm = new DummyImplementierungInterface();	
-		imm.umwandelnSTL2Zustand(stl, febo, zustand, lagetks);
-		imm.schliesseBohrungen(stl, febo, zustand, lagetks);
-		imm.berechneZielZustandDrehen(stl, febo, zustand, lagetks, zzd);
-		imm.berechneEGM_Daten(stl, febo, zustand, lagetks, eg);
+		double dieZRVorschubX = 2.3, dieZRVorschubY = 0.4, dieZRSpantiefeX = 0.1, dieZRSpantiefeY = 1.8;
+		List<Double> diePunktefolge = new ArrayList<>();
+		List<Triangle> triangleList = new ArrayList<>();
+		String filePath = STL.filePath();
+		STL stl = new STL(filePath);
+
+		Zustand zustand = new Zustand(triangleList);
+		EgVolumen volumen = new EgVolumen(dieZRVorschubX, dieZRVorschubY, dieZRSpantiefeX, dieZRSpantiefeY, diePunktefolge);
+		EgFlaeche flaeche = new EgFlaeche(dieZRVorschubX, dieZRVorschubY, dieZRSpantiefeX, dieZRSpantiefeY);
+
+		Interface schnittstelle = new ClientImplementierung();
+		ReturnZustand result1 = schnittstelle.umwandelnSTL2Zustand(stl);
+		ReturnZustand result2 = schnittstelle.schliesseBohrungen(zustand);
+		ReturnZielZustandDrehen result3 = schnittstelle.berechneZielZustandDrehen(triangleList);
+		ReturnEg result4 = schnittstelle.berechneEgDatenDrehen(zustand, volumen,flaeche);
+
+		System.out.println(result1.getDerBiboZustand().getBiboTriangleAnzahl());
+		System.out.println(result2.getDerBiboError().getDerErrorCode());
+		System.out.println(result3.getDerBiboZustand().getBiboTriangleAnzahl());
+		System.out.println(result4.getDieBiboEg().toString());
 	}
 }

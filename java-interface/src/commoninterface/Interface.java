@@ -1,12 +1,15 @@
 package commoninterface;
 
+import java.util.List;
+
 public interface Interface {
-	
-	public void umwandelnSTL2Zustand(STL stl, FEBO febo, Zustand zustand, LageTKS lagetks);
-	
-	public void schliesseBohrungen(STL stl, FEBO febo, Zustand zustand, LageTKS lagetks);
-	
-	public void berechneZielZustandDrehen(STL stl, FEBO febo, Zustand zustand, LageTKS lagetks, ZielZustandDrehen zzd);
-	
-	public void berechneEGM_Daten(STL stl, FEBO febo, Zustand zustand, LageTKS lagetks, EG eg);
+
+	public ReturnZustand umwandelnSTL2Zustand(STL stl);
+
+	public ReturnZustand schliesseBohrungen(Zustand zustand);
+
+	public ReturnZielZustandDrehen berechneZielZustandDrehen(List<Triangle> triangleList);
+
+	public ReturnEg berechneEgDatenDrehen(Zustand zustand, EgVolumen volumen,
+			EgFlaeche flaeche);
 }
