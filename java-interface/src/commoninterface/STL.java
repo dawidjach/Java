@@ -29,7 +29,11 @@ public class STL {
 	}
 
 	public void readFile() {
+<<<<<<< HEAD
 		String filePath = filePath();
+=======
+		String filePath = "pfad//stl.txt";
+>>>>>>> 47c6b02b5359daddf71b8f67614597377e7f0908
 
 		try {
 			FileReader fileReader = new FileReader(filePath);
